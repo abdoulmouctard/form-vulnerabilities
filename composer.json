@@ -1,0 +1,21 @@
+{
+  "name": "mouctar/tp-note",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mouctar DIALLO",
+      "email": "abdoulmouctard@gmail.com"
+    },
+    {
+      "name": "Naïm GUERROUI",
+      "email": "naimguerroui@gmail.com"
+    }
+  ],
+  "minimum-stability": "alpha",
+  "autoload": {
+    "psr-4": {
+      "App\\": "app"
+    }
+  }
+}
