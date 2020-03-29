@@ -105,9 +105,12 @@
         </button>
       </div>
     </form>
-    <div class="container">
-      <?= $users ?>
-      <?= $inventories ?>
+    <div class="container investigations">
+      <?php foreach ($investigations as $investigation) : ?>
+        <div class="investigation">
+          <div class="user"><?= $investigation->user ?> </div>
+        </div>
+      <?php endforeach ?>
     </div>
   </main>
   <footer>

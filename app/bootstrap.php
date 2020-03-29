@@ -49,3 +49,36 @@ function submit_form(array $collection)
     $user_id = create_user($collection);
     create_investigation($user_id, $collection);
 }
+
+
+function return_form()
+{
+    $users = [];
+    $investigations = [
+        (object) [
+            "user" => "USER 1 (test@gmail.com)",
+            "data" => (object) [
+                "contry" => "France",
+                "deaths" => (object) [
+                    "daily" => 200,
+                    "total" => 1000,
+                ],
+            ]
+        ],
+        (object) [
+            "user" => "USER 1 (test@gmail.com)",
+            "data" => (object) [
+                "contry" => "France",
+                "deaths" => (object) [
+                    "daily" => 200,
+                    "total" => 1000,
+                ],
+            ]
+        ]
+    ];
+
+    ob_start();
+    include("../resources/template.php");
+    $content = ob_get_clean();
+    echo $content;
+}

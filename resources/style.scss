@@ -270,3 +270,15 @@ form {
     }
 
 }
+
+
+
+.investigations {
+    background-color: white;
+    padding: 10px 5px;
+    margin-bottom: 50px;
+
+    .investigation {
+        background-color: red($color: #e46363);
+    }
+}
